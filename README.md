@@ -6,12 +6,13 @@ MoodStamp is a small Stellar Soroban dApp for saving a personal mood note on-cha
 
 - MoodStamp Stellar
 
-## Who Are You
+## About Me
 
 - name: Selin Bayrak
 - Blockchain and web development learner
 - Interested in simple, useful smart contract ideas
 - Building with Stellar Testnet and Soroban
+- Learning how wallets, smart contracts, and frontends work together
 
 ## Project Details
 
@@ -20,6 +21,19 @@ MoodStamp lets a user connect a Freighter wallet and save a simple mood such as 
 ## Vision
 
 MoodStamp shows how blockchain can store small personal records in a transparent and user-owned way. The project is intentionally simple so new builders can understand the full path from smart contract storage to wallet signing and frontend interaction. In the future, this idea could grow into a lightweight on-chain journal, wellness check-in tool, or community mood board where people own their history and can prove participation without a central database.
+
+## Development Plan
+
+1. Create Soroban storage keys for each user's latest mood, each user's mood count, and total mood stamps.
+2. Add `set_mood(user, mood)` with wallet authorization so users can save their own mood.
+3. Add read functions: `get_mood(user)`, `get_mood_count(user)`, and `get_total_moods()`.
+4. Write contract tests for saving a mood, updating a mood, counting repeated stamps, and tracking total mood stamps.
+5. Build the React frontend with Freighter wallet connection, mood buttons, latest mood display, and contract stats.
+6. Build, generate TypeScript bindings, deploy the contract to Stellar Testnet, and connect the deployed contract ID to the frontend.
+
+## Personal Story
+
+I built MoodStamp to practice the full flow of a Stellar dApp with a friendly, easy idea. It helped me understand how a wallet signs an action, how a Soroban contract stores user data, and how a frontend can make blockchain interaction feel simple.
 
 ## Smart Contract Functions
 
@@ -32,7 +46,7 @@ MoodStamp shows how blockchain can store small personal records in a transparent
 
 - Network: Stellar Testnet
 - Contract ID: `CCDH36O67UTZZLBMEF2QROXDHKR6YXCCFXWUE43EO5WHTJ7Z2PR7JAMO`
-- Explorer: https://stellar.expert/explorer/testnet/contract/CCDH36O67UTZZLBMEF2QROXDHKR6YXCCFXWUE43EO5WHTJ7Z2PR7JAMO
+- Explorer: <https://stellar.expert/explorer/testnet/contract/CCDH36O67UTZZLBMEF2QROXDHKR6YXCCFXWUE43EO5WHTJ7Z2PR7JAMO>
 
 ## Tech Stack
 
@@ -86,26 +100,9 @@ Open:
 http://localhost:4323
 ```
 
-## ChatGPT Prompt 1
+## Visual Concept
 
-Write me a project description, in less than 150 simple, straightforward words, for a blockchain project on Stellar. The project lets users connect a wallet and save their current mood on-chain with a Soroban smart contract.
-
-## ChatGPT Prompt 2
-
-Now, also write a vision statement, in 100 simple, straightforward words, for this project. Talk about how simple personal data on-chain can help new users understand blockchain ownership.
-
-## ChatGPT Prompt 3
-
-Now, write me a software development plan for this project. Mainly focus on smart contract functions, variables, and features. Then mention the frontend. Keep it under 6 steps. Final step can be deployment.
-
-## ChatGPT Prompt 4
-
-Now, write a personal story summary in less than 100 words about building a simple Stellar mood stamping app as a first smart contract project.
-
-## ChatGPT Prompt 5
-
-Can you also write a draft GitHub README on how to install the project?
-
-## ImgCreator Prompt
-
-Futuristic happy digital painting with a friendly robot mascot in a bright city, creating tiny glowing mood stamps, simple blockchain lights, cheerful colors.
+- Mascot: friendly robot
+- Setting: bright futuristic city
+- Physical keywords: creating tiny glowing mood stamps
+- Art direction: futuristic happy digital painting with cheerful colors, simple blockchain lights, and a friendly mood-tracking atmosphere
